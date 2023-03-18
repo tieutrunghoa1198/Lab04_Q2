@@ -127,9 +127,9 @@ namespace Lab04_Q2
                     emp.Name= nametext.Text;
                     emp.Dob= dateTimePicker1.Value;
                     asd.Entry<Employee>(emp).State = EntityState.Modified;
-                    asd.SaveChanges();
-                    getAll();
-                }
+                asd.SaveChanges();
+                getAll();
+            }
             }
             catch (Exception ex)
             {
